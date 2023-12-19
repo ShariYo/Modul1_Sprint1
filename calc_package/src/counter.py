@@ -50,26 +50,36 @@ class Calculator:
         self.memory = 0
 
 
-# result = Calculator(0)
+
+
+#---Just for fun I made my automated calculator version with implemented Calculator class methods.---
+
+# result = Calculator()
 # while True:
-#     i = input()
-#     if i.startswith('+'):
-#         addition = float(i[1:])
-#         print(result.add(addition))
-#     elif i.startswith('-'):
-#         subtraction = float(i[1:])
-#         print(result.sub(subtraction))
-#     elif i.startswith('*'):
-#         multiplication = float(i[1:])
-#         print(result.mul(multiplication))
-#     elif i.startswith('/'):
-#         division = float(i[1:])
-#         print(result.div(division))
-#     elif i.startswith('r'):
-#         root = float(i[1:])
-#         print(result.roo(root))
-#     elif i == 'c':
-#         break
-#     else:
-#         break
-    
+#         i = input()
+#         if i.startswith('+'):
+#             result.add(result.memory, float(i[1:]))
+#             print(f'\nResult: {result.memory}')
+#         elif i.startswith('-'):
+#             result.sub(result.memory, float(i[1:]))
+#             print(f'\nResult: {result.memory}')
+#         elif i.startswith('*'):
+#             result.mul(result.memory, float(i[1:]))
+#             print(f'\nResult: {result.memory}')
+#         elif i.startswith('/'):
+#             result.div(result.memory, float(i[1:]))
+#             print(f'\nResult: {result.memory}')
+#         elif i.startswith('r'):
+#             """This r letter, entering r and number by it (e.g. r2) takes selected level root."""
+#             result.roo(result.memory, float(i[1:]))
+#             print(f'\nResult: {result.memory}')
+#         elif i == 'c':
+#             """This c letter, after entering it into calculator, resets memory."""
+#             result.reset()
+#             print(f'\nResult: {float(0)}')
+#         elif i.startswith('s'):
+#             """Stops calculator completely."""
+#             print('\nYou have stopped calculating.')
+#             break
+#         else:
+#             print(f'There was Value Error: {ValueError}. Please insert number, not a string!')
