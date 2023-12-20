@@ -1,5 +1,5 @@
 
-# Counter
+# Mycounter
 
 The project basically works as a calculator's principle. It can do addition, subtraction, multiplication, division as well as take a root with selected level(y). It has it's own memory and function to reset memory to 0.
 
@@ -17,16 +17,16 @@ The project basically works as a calculator's principle. It can do addition, sub
 
 ## Installation
 
-Install "counter" project using pip install:
+Install "mycounter" project using pip install:
 
 ```bash
-  pip install counter
+  pip install mycounter
 ```
     
 ## Usage/Examples
 
 ```python
-import counter from Calculator
+import mycounter from Calculator
 
 a = Calculator().add(2, 2)
 print(a)

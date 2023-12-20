@@ -1,5 +1,5 @@
 import unittest
-from src.counter import Calculator
+from src.mycounter import Calculator
 
 calc = Calculator()
 
