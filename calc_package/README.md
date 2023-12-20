@@ -20,7 +20,7 @@ The project basically works as a calculator's principle. It can do addition, sub
 Install "mycounter" project using pip install:
 
 ```bash
-  pip install mycounter
+  !pip install git+https://github.com/ShariYo/mycounter.git
 ```
     
 ## Usage/Examples
