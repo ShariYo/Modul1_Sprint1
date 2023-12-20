@@ -12,24 +12,29 @@ class Calculator:
     reset() - resets number to 0"""
 
     def __init__(self):
+        """Sets starting memory to 0."""
         self.memory = 0
 
     def add(self, x, y):
+        """Function for addition of values x and y."""
         result = x + y
         self.memory = result
         return result
 
     def sub(self, x, y):
+        """Function for subtraction of values x and y."""
         result = x - y
         self.memory = result
         return result    
 
     def mul(self, x, y):
+        """Function for multiplication of values x and y."""
         result = x * y
         self.memory = result
         return result
 
     def div(self, x, y):
+        """Function for division of values x and y including division of zero safety."""
         try:
             result = x / y
         except ZeroDivisionError as zdr:
@@ -39,14 +44,17 @@ class Calculator:
             return result
     
     def roo(self, x, y):
+        """Function for taking selected level(y) root of a value x."""
         result = x **(1/y) #---To select root with certain level formula is: x ** (1/n), where n is level of the root.---
         self.memory = result
         return result
 
     def memory(self):
+        """Function to return a result of calculated values."""
         return self.memory
     
     def reset(self):
+        """Function to reset the returned result of calculated values."""
         self.memory = 0
 
 
