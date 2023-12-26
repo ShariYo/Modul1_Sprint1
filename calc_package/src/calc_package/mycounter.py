@@ -1,3 +1,4 @@
+__version__= "0.1"
 class Calculator:
     """A class which main function is to calculate numbers.
     It can do addition, subtraction, multiplication, division,
