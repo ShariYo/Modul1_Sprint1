@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "calc_package"
-authors = [{name = "Vykintas Palskys", email = "vykintas.palskys@gmail.com"}]
+authors = [{name = "Shari_Yo", email = "vykintas.palskys@gmail.com"}]
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]

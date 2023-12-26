@@ -20,13 +20,15 @@ The project basically works as a calculator's principle. It can do addition, sub
 Install "mycounter" project using pip install:
 
 ```bash
-  !pip install git+https://github.com/ShariYo/mycounter.git
+  pip install calc_package
 ```
     
 ## Usage/Examples
 
 ```python
-import mycounter from Calculator
+from calc_package.mycounter import Calculator
+
+help(Calculator)
 
 a = Calculator().add(2, 2)
 print(a)
