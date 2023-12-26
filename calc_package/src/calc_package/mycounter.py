@@ -46,9 +46,13 @@ class Calculator:
     
     def roo(self, x, y):
         """Function for taking selected level(y) root of a value x."""
-        result = x **(1/y) #---To select root with certain level formula is: x ** (1/n), where n is level of the root.---
-        self.memory = result
-        return result
+        try:
+            result = x **(1/y) #---To select root with certain level formula is: x ** (1/n), where n is level of the root.---
+        except ZeroDivisionError as zdr:
+            print('\nCannot take r0 of a number x. Use different r number. \nError name: ', zdr)
+        else:
+            self.memory = result
+            return result
 
     def memory(self):
         """Function to return a result of calculated values."""
