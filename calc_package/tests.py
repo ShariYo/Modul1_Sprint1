@@ -16,6 +16,8 @@ class TestAlgebra(unittest.TestCase):
 
     def test_div(self):
         self.assertEqual(calc.div(10, 2), 5, 'Answer should be 5')
+        with self.assertRaises(ZeroDivisionError):
+            calc.div(10, 0)
 
     def test_roo(self):
         self.assertEqual(calc.roo(36, 2), 6, 'Answer should be 6')
