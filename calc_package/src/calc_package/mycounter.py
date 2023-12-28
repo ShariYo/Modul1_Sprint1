@@ -40,7 +40,7 @@ class Calculator:
             result = x / y
         except ZeroDivisionError as zdr:
             print('\nZero division cannot be done! Use different number. \nError name: ', zdr)
-            raise ZeroDivisionError
+            raise
         else:
             self.memory = result
             return result
